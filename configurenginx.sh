@@ -42,7 +42,7 @@ else
 fi
 cat > /etc/nginx/conf.d/default.conf << EOF
 upstream dotnet {
-	server $remotehost:$remoteport;
+	server $remote_host:$remote_port;
 }
 
 server {
